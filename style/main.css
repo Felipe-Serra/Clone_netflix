@@ -44,7 +44,7 @@ header nav a:hover {
 /*filme principal*/
 .filme_principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(67, 63, 75,.50)100%), url('/img/Banner_vis_a_vis.jpg');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(67, 63, 75,.50)100%), url('/img/vis-a-vis-banner.jpg');
     height: 400px;
 
     background-size: cover;
@@ -57,5 +57,28 @@ header nav a:hover {
     margin-bottom: 40px;
 }
 .filme_principal .titulo {
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/*Font awesome: permite colocar simbolos no meio do texto html*/
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+.botao i {
+    margin-right: 8px;
 }
