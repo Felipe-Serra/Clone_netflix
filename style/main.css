@@ -20,8 +20,7 @@ header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: 0;
 }
 
 header .logo {
@@ -29,22 +28,38 @@ header .logo {
     color: var(--vermelho);
     font-family: 'Arial Black';
     font-size: 40px;
+    margin-right: 20px;
 }
 
+header nav {
+    align-content: flex-end;
+    padding-right: 2px;
+
+}
 header nav a {
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin-left: 8px;
+}
+
+header nav i {
+    justify-self: end;
+    margin-right: 5px;
 }
 
 header nav a:hover {
     color: #fff;
 }
 
+header nav i:hover {
+    color: gray;
+}
+
+
 /*filme principal*/
 .filme_principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(67, 63, 75,.50)100%), url('/img/vis-a-vis-banner.jpg');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(67, 63, 75,.50)100%), url('/img/banner1.jpg');
     height: 400px;
 
     background-size: cover;
@@ -53,15 +68,16 @@ header nav a:hover {
     justify-content: center;
     align-items: flex-start;
 }
-.filme_principal .descricao {
-    margin-bottom: 40px;
-}
+
 .filme_principal .titulo {
-    margin-top: 15%;
+    margin-top: 14%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
+.filme_principal .descricao {
+    margin-bottom: 40px;
+}
 
 .botao {
     background-color: rgba(0,0,0,.50);
@@ -91,12 +107,20 @@ header nav a:hover {
     width: 80%;
 }
 
+/* Carrossel*/
+
 .box-filme {
     height: 100%;
     width: 100%;
     display: block;
 }
 
+
+.titulo1 {
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
 .carrossel-filmes {
     margin-top: 5px;
 }
