@@ -9,9 +9,11 @@
     box-sizing: border-box;
 }
 
+/*elementos base*/
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -37,4 +39,23 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/*filme principal*/
+.filme_principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(67, 63, 75,.50)100%), url('/img/Banner_vis_a_vis.jpg');
+    height: 400px;
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme_principal .descricao {
+    margin-bottom: 40px;
+}
+.filme_principal .titulo {
+    font-size: 40px;
 }
